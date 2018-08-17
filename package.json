@@ -1,0 +1,22 @@
+{
+  "name": "puppeteer-helpers",
+  "version": "1.0.1",
+  "description": "Helpers for puppeteer scraping",
+  "main": "dist/index.js",
+  "scripts": {
+    "tester": "tsc && node ./dist/tester.js",
+    "prepublish": "tsc && npm --no-git-tag-version version patch"
+  },
+  "publishConfig": {
+    "registry": "http://sinopia.aarmora.com/"
+  },
+  "author": "Jordan Hansen",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/puppeteer": "^1.6.0",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "puppeteer": "^1.7.0"
+  }
+}
